@@ -1,0 +1,103 @@
+/* ===== Overall Page ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #1d582f, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ===== Card UI ===== */
+.container {
+  width: 360px;
+  background:rgb(255, 235, 11);
+  padding: 32px;
+  border-radius: 28px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Smooth fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #081c8d;
+}
+
+/* ===== Input Row ===== */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.input-group {
+  width: 48%;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  color: #b53333;
+  font-weight: 500;
+}
+
+/* ===== Input Fields ===== */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 2px solid #cfcfcf;
+  outline: none;
+  transition: all 0.3s;
+  background: transparent;
+}
+
+input:focus,
+select:focus {
+  border-bottom: 2px solid #437cb9;
+}
+
+/* ===== Result Box ===== */
+.result {
+  text-align: left;
+  margin-top: 30px;
+}
+
+#resultOutput {
+  font-weight: bold;
+  color: #26a61a;
+}
+
+/* ===== Button ===== */
+.convert-btn {
+  width: 100%;
+  margin-top: 35px;
+  padding: 15px;
+  background: #16b877;
+  color: white;
+  border: none;
+  border-radius: 18px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.convert-btn:hover {
+  background: #4f82b9;
+  transform: scale(1.03);
+}
